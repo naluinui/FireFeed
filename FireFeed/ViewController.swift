@@ -7,12 +7,19 @@
 //
 
 import UIKit
+import EggRating
+import FirebaseAnalytics
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        EggRating.delegate = self
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        EggRating.promptRateUs(in: self)
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +27,19 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+
+}
+
+extension ViewController: EggRatingDelegate {
+    
+    func didRate(rating rate: Double) {
+        if rate >= EggRating.minRatingToAppStore {
+            Analytics.logEvent("rate_high_score", parameters: nil)
+        }
+    }
+    func didIgnoreToRate() {}
+    func didRateOnAppStore() {}
+    func didIgnoreToRateOnAppStore() {}
 
 }
 

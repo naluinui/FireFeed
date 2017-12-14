@@ -4,5 +4,6 @@ target 'FireFeed' do
   use_frameworks!
 
   pod 'Firebase/Core'
+  pod 'EggRating'
 
 end
