@@ -13,6 +13,7 @@
 		FDA410271FE2953A005CDB8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDA410251FE2953A005CDB8C /* Main.storyboard */; };
 		FDA410291FE2953A005CDB8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDA410281FE2953A005CDB8C /* Assets.xcassets */; };
 		FDA4102C1FE2953A005CDB8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDA4102A1FE2953A005CDB8C /* LaunchScreen.storyboard */; };
+		FDA410361FE29B21005CDB8C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FDA410351FE29B21005CDB8C /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		FDA410281FE2953A005CDB8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDA4102B1FE2953A005CDB8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FDA4102D1FE2953A005CDB8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDA410351FE29B21005CDB8C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				FDA410251FE2953A005CDB8C /* Main.storyboard */,
 				FDA410281FE2953A005CDB8C /* Assets.xcassets */,
 				FDA4102A1FE2953A005CDB8C /* LaunchScreen.storyboard */,
+				FDA410351FE29B21005CDB8C /* GoogleService-Info.plist */,
 				FDA4102D1FE2953A005CDB8C /* Info.plist */,
 			);
 			path = FireFeed;
@@ -151,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDA4102C1FE2953A005CDB8C /* LaunchScreen.storyboard in Resources */,
+				FDA410361FE29B21005CDB8C /* GoogleService-Info.plist in Resources */,
 				FDA410291FE2953A005CDB8C /* Assets.xcassets in Resources */,
 				FDA410271FE2953A005CDB8C /* Main.storyboard in Resources */,
 			);
