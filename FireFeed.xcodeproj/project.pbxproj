@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A29592DA7867EE74EB6D5D5 /* Pods_FireFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C1A6D9D851607FA049FAEA1 /* Pods_FireFeed.framework */; };
 		FDA410221FE2953A005CDB8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA410211FE2953A005CDB8C /* AppDelegate.swift */; };
 		FDA410241FE2953A005CDB8C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA410231FE2953A005CDB8C /* ViewController.swift */; };
 		FDA410271FE2953A005CDB8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDA410251FE2953A005CDB8C /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C1A6D9D851607FA049FAEA1 /* Pods_FireFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FireFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		36AE5BB0D089C971E06D6194 /* Pods-FireFeed.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireFeed.release.xcconfig"; path = "Pods/Target Support Files/Pods-FireFeed/Pods-FireFeed.release.xcconfig"; sourceTree = "<group>"; };
+		BA1619240C14C71887800AED /* Pods-FireFeed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireFeed.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FireFeed/Pods-FireFeed.debug.xcconfig"; sourceTree = "<group>"; };
 		FDA4101E1FE2953A005CDB8C /* FireFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FireFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDA410211FE2953A005CDB8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDA410231FE2953A005CDB8C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A29592DA7867EE74EB6D5D5 /* Pods_FireFeed.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		140BFF185CE3A14DB116EB16 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BA1619240C14C71887800AED /* Pods-FireFeed.debug.xcconfig */,
+				36AE5BB0D089C971E06D6194 /* Pods-FireFeed.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		85796BB6941EF331BB01723A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1C1A6D9D851607FA049FAEA1 /* Pods_FireFeed.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FDA410151FE2953A005CDB8C = {
 			isa = PBXGroup;
 			children = (
 				FDA410201FE2953A005CDB8C /* FireFeed */,
 				FDA4101F1FE2953A005CDB8C /* Products */,
+				140BFF185CE3A14DB116EB16 /* Pods */,
+				85796BB6941EF331BB01723A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FDA410301FE2953A005CDB8C /* Build configuration list for PBXNativeTarget "FireFeed" */;
 			buildPhases = (
+				1198E07D595CD47F1C64A5DE /* [CP] Check Pods Manifest.lock */,
 				FDA4101A1FE2953A005CDB8C /* Sources */,
 				FDA4101B1FE2953A005CDB8C /* Frameworks */,
 				FDA4101C1FE2953A005CDB8C /* Resources */,
+				B61D001EDFE4BDD204481F5C /* [CP] Embed Pods Frameworks */,
+				74676CC1E04235C4607EE87B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,62 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1198E07D595CD47F1C64A5DE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FireFeed-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		74676CC1E04235C4607EE87B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FireFeed/Pods-FireFeed-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B61D001EDFE4BDD204481F5C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FireFeed/Pods-FireFeed-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FireFeed/Pods-FireFeed-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FDA4101A1FE2953A005CDB8C /* Sources */ = {
@@ -272,6 +355,7 @@
 		};
 		FDA410311FE2953A005CDB8C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA1619240C14C71887800AED /* Pods-FireFeed.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +371,7 @@
 		};
 		FDA410321FE2953A005CDB8C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36AE5BB0D089C971E06D6194 /* Pods-FireFeed.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
