@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0A29592DA7867EE74EB6D5D5 /* Pods_FireFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C1A6D9D851607FA049FAEA1 /* Pods_FireFeed.framework */; };
+		FD060D021FE2B79400E206BD /* RemoteConfigValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD060D011FE2B79400E206BD /* RemoteConfigValue.swift */; };
 		FDA410221FE2953A005CDB8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA410211FE2953A005CDB8C /* AppDelegate.swift */; };
 		FDA410241FE2953A005CDB8C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA410231FE2953A005CDB8C /* ViewController.swift */; };
 		FDA410271FE2953A005CDB8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDA410251FE2953A005CDB8C /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 		1C1A6D9D851607FA049FAEA1 /* Pods_FireFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FireFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		36AE5BB0D089C971E06D6194 /* Pods-FireFeed.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireFeed.release.xcconfig"; path = "Pods/Target Support Files/Pods-FireFeed/Pods-FireFeed.release.xcconfig"; sourceTree = "<group>"; };
 		BA1619240C14C71887800AED /* Pods-FireFeed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireFeed.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FireFeed/Pods-FireFeed.debug.xcconfig"; sourceTree = "<group>"; };
+		FD060D011FE2B79400E206BD /* RemoteConfigValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteConfigValue.swift; sourceTree = "<group>"; };
 		FDA4101E1FE2953A005CDB8C /* FireFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FireFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDA410211FE2953A005CDB8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDA410231FE2953A005CDB8C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 			children = (
 				FDA410211FE2953A005CDB8C /* AppDelegate.swift */,
 				FDA410231FE2953A005CDB8C /* ViewController.swift */,
+				FD060D011FE2B79400E206BD /* RemoteConfigValue.swift */,
 				FDA410251FE2953A005CDB8C /* Main.storyboard */,
 				FDA410281FE2953A005CDB8C /* Assets.xcassets */,
 				FDA4102A1FE2953A005CDB8C /* LaunchScreen.storyboard */,
@@ -205,6 +208,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-FireFeed/Pods-FireFeed-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/EggRating/EggRating.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/RateView/RateView.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -212,6 +216,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EggRating.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RateView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -228,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDA410241FE2953A005CDB8C /* ViewController.swift in Sources */,
+				FD060D021FE2B79400E206BD /* RemoteConfigValue.swift in Sources */,
 				FDA410221FE2953A005CDB8C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -4,6 +4,7 @@ target 'FireFeed' do
   use_frameworks!
 
   pod 'Firebase/Core'
+  pod 'Firebase/RemoteConfig'
   pod 'EggRating'
 
 end
