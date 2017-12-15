@@ -23,7 +23,15 @@ class RemoteConfigValue {
         fetchRemoteValues()
     }
     
-    func loadDefaultValues() {}
+    func loadDefaultValues() {
+        
+        let defaultValues: [String: Any?] = [
+            RemoteConfigKey.ratingTitleText.rawValue: "Enjoy using our app?",
+            RemoteConfigKey.ratingMessageText.rawValue: "Please take a moment to rate it"
+        ]
+        RemoteConfig.remoteConfig().setDefaults(defaultValues as? [String: NSObject])
+        
+    }
     
     func fetchRemoteValues() {
         let fetchDuration: TimeInterval = 60

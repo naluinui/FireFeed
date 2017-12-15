@@ -14,6 +14,8 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        EggRating.titleLabelText = RemoteConfigValue.shared.string(for: .ratingTitleText)
+        EggRating.descriptionLabelText = RemoteConfigValue.shared.string(for: .ratingMessageText)
         EggRating.delegate = self
     }
     
