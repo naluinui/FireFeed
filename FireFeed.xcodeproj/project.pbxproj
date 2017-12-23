@@ -8,28 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		0A29592DA7867EE74EB6D5D5 /* Pods_FireFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C1A6D9D851607FA049FAEA1 /* Pods_FireFeed.framework */; };
-		FD060D021FE2B79400E206BD /* RemoteConfigValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD060D011FE2B79400E206BD /* RemoteConfigValue.swift */; };
 		FDA410221FE2953A005CDB8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA410211FE2953A005CDB8C /* AppDelegate.swift */; };
-		FDA410241FE2953A005CDB8C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA410231FE2953A005CDB8C /* ViewController.swift */; };
 		FDA410271FE2953A005CDB8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDA410251FE2953A005CDB8C /* Main.storyboard */; };
 		FDA410291FE2953A005CDB8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDA410281FE2953A005CDB8C /* Assets.xcassets */; };
 		FDA4102C1FE2953A005CDB8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDA4102A1FE2953A005CDB8C /* LaunchScreen.storyboard */; };
 		FDA410361FE29B21005CDB8C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FDA410351FE29B21005CDB8C /* GoogleService-Info.plist */; };
+		FDEC9CB41FE3D165003CC87D /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEC9CB31FE3D165003CC87D /* FeedViewController.swift */; };
+		FDEC9CB71FE3D1A8003CC87D /* RemoteConfigValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEC9CB61FE3D1A8003CC87D /* RemoteConfigValue.swift */; };
+		FDEC9CBB1FE3D752003CC87D /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEC9CBA1FE3D752003CC87D /* FeedTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1C1A6D9D851607FA049FAEA1 /* Pods_FireFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FireFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		36AE5BB0D089C971E06D6194 /* Pods-FireFeed.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireFeed.release.xcconfig"; path = "Pods/Target Support Files/Pods-FireFeed/Pods-FireFeed.release.xcconfig"; sourceTree = "<group>"; };
 		BA1619240C14C71887800AED /* Pods-FireFeed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireFeed.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FireFeed/Pods-FireFeed.debug.xcconfig"; sourceTree = "<group>"; };
-		FD060D011FE2B79400E206BD /* RemoteConfigValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteConfigValue.swift; sourceTree = "<group>"; };
 		FDA4101E1FE2953A005CDB8C /* FireFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FireFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDA410211FE2953A005CDB8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FDA410231FE2953A005CDB8C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FDA410261FE2953A005CDB8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FDA410281FE2953A005CDB8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDA4102B1FE2953A005CDB8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FDA4102D1FE2953A005CDB8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FDA410351FE29B21005CDB8C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FDEC9CB31FE3D165003CC87D /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		FDEC9CB61FE3D1A8003CC87D /* RemoteConfigValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteConfigValue.swift; sourceTree = "<group>"; };
+		FDEC9CBA1FE3D752003CC87D /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +85,9 @@
 			isa = PBXGroup;
 			children = (
 				FDA410211FE2953A005CDB8C /* AppDelegate.swift */,
-				FDA410231FE2953A005CDB8C /* ViewController.swift */,
-				FD060D011FE2B79400E206BD /* RemoteConfigValue.swift */,
+				FDEC9CB11FE3D133003CC87D /* Views */,
+				FDEC9CB21FE3D149003CC87D /* Controllers */,
+				FDEC9CB51FE3D197003CC87D /* Helpers */,
 				FDA410251FE2953A005CDB8C /* Main.storyboard */,
 				FDA410281FE2953A005CDB8C /* Assets.xcassets */,
 				FDA4102A1FE2953A005CDB8C /* LaunchScreen.storyboard */,
@@ -92,6 +95,30 @@
 				FDA4102D1FE2953A005CDB8C /* Info.plist */,
 			);
 			path = FireFeed;
+			sourceTree = "<group>";
+		};
+		FDEC9CB11FE3D133003CC87D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FDEC9CBA1FE3D752003CC87D /* FeedTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FDEC9CB21FE3D149003CC87D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FDEC9CB31FE3D165003CC87D /* FeedViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FDEC9CB51FE3D197003CC87D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FDEC9CB61FE3D1A8003CC87D /* RemoteConfigValue.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,9 +259,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDA410241FE2953A005CDB8C /* ViewController.swift in Sources */,
-				FD060D021FE2B79400E206BD /* RemoteConfigValue.swift in Sources */,
+				FDEC9CB41FE3D165003CC87D /* FeedViewController.swift in Sources */,
 				FDA410221FE2953A005CDB8C /* AppDelegate.swift in Sources */,
+				FDEC9CB71FE3D1A8003CC87D /* RemoteConfigValue.swift in Sources */,
+				FDEC9CBB1FE3D752003CC87D /* FeedTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

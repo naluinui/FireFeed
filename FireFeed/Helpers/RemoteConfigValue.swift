@@ -19,6 +19,8 @@ class RemoteConfigValue {
     static var shared = RemoteConfigValue()
 
     init() {
+        RemoteConfig.remoteConfig().configSettings = RemoteConfigSettings(developerModeEnabled: true)!
+
         loadDefaultValues()
         fetchRemoteValues()
     }
@@ -30,11 +32,10 @@ class RemoteConfigValue {
             RemoteConfigKey.ratingMessageText.rawValue: "Please take a moment to rate it"
         ]
         RemoteConfig.remoteConfig().setDefaults(defaultValues as? [String: NSObject])
-        
     }
     
     func fetchRemoteValues() {
-        let fetchDuration: TimeInterval = 60
+        let fetchDuration: TimeInterval = 15
         RemoteConfig.remoteConfig().fetch(withExpirationDuration: fetchDuration) { (_, error) in
             if error == nil {
                 print("fetch complete!")
